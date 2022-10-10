@@ -26,7 +26,6 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    <script href="./main.js"></script>
   </head>
   <body>
     <!-- Rating state start -->
@@ -84,5 +83,25 @@
       >. Coded by
       <a target="_blank" href="https://github.com/LeliFanz">LeliFanz</a>.
     </div>
+    <script>
+      let numeros = document.querySelector(".div_numeros");
+      let rateNumber = document.querySelector(".div_rateNumber");
+      let buttonSubmit = document.querySelector(".button");
+      let targetFirst = document.querySelector("#qw");
+      let targetThanks = document.querySelector("#thanks");
+
+      numeros.addEventListener("click", (event) => {
+        let numberSelect = event.target.innerText;
+        rateNumber.innerText = numberSelect;
+        console.log(numberSelect);
+        if (numberSelect >= 1 || numberSelect <= 5) {
+          buttonSubmit.addEventListener("click", () => {
+            targetFirst.style.display = "none";
+            targetThanks.style.display = "block";
+          });
+        }
+      });
+    </script>
   </body>
+  <script href="main.js"></script>
 </html>
