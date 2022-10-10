@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div
+      class="container d-flex justify-content-center align-items-center alto-100"
+    >
+      <div class="qw" id="qw">
+        <div class="circle">
+          <img src="images/icon-star.svg" alt="" />
+        </div>
+        <h4>How did we do?</h4>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="footer">
+          <div class="div_numeros">
+            <button class="circle" id="circle">1</button>
+            <button class="circle" id="circle">2</button>
+            <button class="circle" id="circle">3</button>
+            <button class="circle" id="circle">4</button>
+            <button class="circle" id="circle">5</button>
+          </div>
+          <div class="button">submit</div>
+        </div>
+      </div>
+
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+
+      <div class="qw" id="thanks">
+        <div class="imagen">
+          <img src="images/illustration-thank-you.svg" alt="" />
+        </div>
+        <div class="result">
+          You selected
+          <span class="div_rateNumber">4</span>
+          out of 5
+        </div>
+        <h4>Thank you!</h4>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+
+    <!-- Thank you state end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a target="_blank" href="https://github.com/LeliFanz">LeliFanz</a>.
+    </div>
+
+    <link href="./main.js" />
+  </body>
+</html>
