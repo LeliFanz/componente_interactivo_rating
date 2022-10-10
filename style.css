@@ -71,11 +71,11 @@ p {
   display: flex;
   justify-content: space-between;
 }
-#circle:hover {
+.circle:hover {
   background-color: var(--Orange);
   color: var(--White);
 }
-#circle:focus {
+.circle:focus {
   background-color: var(--Medium-Grey);
   color: var(--White);
 }
